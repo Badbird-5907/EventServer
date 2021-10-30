@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-import app, { set } from '../app';
+import app, { set } from '../app.js';
 var debug = require('debug')('eventserver:server');
 import { createServer } from 'http';
 
@@ -12,7 +12,7 @@ import { createServer } from 'http';
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '3020');
 set('port', port);
 
 /**
