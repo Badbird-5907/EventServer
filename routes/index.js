@@ -5,14 +5,11 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-router.get('/event/amogus/sussy',function (req,res){
-  res.render('finalpuzzle')
+router.get('/deez_nuts',function (req,res){
+  res.render('puzzletwo')
 });
-router.get('/event',(req,res)=>{
-  res.render('secondpuzzle')
-})
-router.get('/brainfuck',(req,res)=>{
-  res.render('brainfuck');
-})
+router.get('/finishedlol',function (req,res){
+  res.render('finish')
+});
 
 module.exports = router;
